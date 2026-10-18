@@ -1,0 +1,17 @@
+# Copyright (c) 2022-2026, The Isaac Lab Project Developers (https://github.com/isaac-sim/IsaacLab/blob/main/CONTRIBUTORS.md).
+# All rights reserved.
+#
+# SPDX-License-Identifier: BSD-3-Clause
+
+services:
+  teleop:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    network_mode: host
+    init: true
+    stdin_open: true
+    tty: true
+    environment:
+      LEROBOT_CLOUDXR_SKIP_AUTOLAUNCH: "1"
+    command: ["--mode", "sim", "--print_config"]

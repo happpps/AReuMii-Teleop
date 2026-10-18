@@ -1,0 +1,16 @@
+AReuMii standalone teleoperation
+
+This directory was extracted from IsaacLab_teleop real_teleop.
+Isaac Lab copyright notices and the BSD-3-Clause license are retained in
+LICENSE and the source files.
+
+The isaac_teleop helpers retain their NVIDIA Corporation and HuggingFace
+copyright notices and Apache-2.0 license headers. The Apache-2.0 license is
+included in licenses/Apache-2.0.txt. Their existing headers are authoritative.
+
+The bridge and bundled robot model originated in this project. The shared
+memory header is a snapshot of the Areum2_can interface; verify it against
+the CAN application's header before using the bridge with real hardware.
+
+External packages and CloudXR are separately licensed. Installing this
+package does not accept the CloudXR EULA or redistribute its runtime.

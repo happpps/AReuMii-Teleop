@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+build/
+dist/
+outputs/
+*.zip
+*.env
+.env*
+configs/local.toml
+can_bridge/areumii_bimanual_udp_shm_bridge_gripper
+can_bridge/areumii_udp_shm_bridge

@@ -1,0 +1,10 @@
+cmake_minimum_required(VERSION 3.16)
+project(areumii_teleop_bridge LANGUAGES CXX)
+
+find_package(Threads REQUIRED)
+foreach(bridge areumii_bimanual_udp_shm_bridge_gripper areumii_udp_shm_bridge)
+    add_executable(${bridge} ${bridge}.cpp)
+    target_compile_features(${bridge} PRIVATE cxx_std_17)
+    target_link_libraries(${bridge} PRIVATE Threads::Threads)
+    install(TARGETS ${bridge} RUNTIME DESTINATION bin)
+endforeach()

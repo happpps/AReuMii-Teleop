@@ -1,0 +1,17 @@
+# Only override values that differ from the bundled configuration.
+# Relative paths below are resolved beside this configuration file.
+[teleop]
+mode = "sim"
+fps = 30.0
+# urdf = "../src/areumii_teleop/assets/areumii_c1_kinematics.urdf"
+# cloudxr_env = "./cloudxr.env"
+# cmd_port = 5010
+# feedback_port = 5011
+
+[robot.gripper_open]
+left = -1.1
+right = -1.1
+
+[robot.gripper_close]
+left = 0.7
+right = 0.7

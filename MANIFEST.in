@@ -1,0 +1,8 @@
+include README.md README_QUICKSTART.md LICENSE NOTICE uv.lock .gitignore .dockerignore
+include areumii_*.py areumii_*.urdf test_real_teleop_in_sim.py
+recursive-include licenses *
+recursive-include configs *.toml
+recursive-include can_bridge *.cpp *.hpp CMakeLists.txt
+recursive-include docker Dockerfile *.yaml
+recursive-include tests *.py
+recursive-include tools *.py
